@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer){
+            result = "Chúng tôi sẽ chơi 1 ván cờ đẹp";
+        } else {
+            result = "Có thể";
+        } return result;
+    }
+    let confirmAnswer = confirm("Chúng tôi sẽ chơi 1 trò chơi?");
+    let theAnswer = processConfirm(confirmAnswer);
+    document.write(theAnswer);
+</script>
+</body>
+</html>
